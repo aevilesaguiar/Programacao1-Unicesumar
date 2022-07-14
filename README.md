@@ -59,12 +59,52 @@
 1. Por que o Java divulga tanto que os seus programas são “write once, run
    everywhere”? porque uma vez escritos e compilados em bytecodes, só é necessário uma JVM , ficando
     o programa independente de plataforma
-
+![esquemaFuncionamentoJvm](img.png)
+a JVM além de ser um interpretador de código,  é também responsável pela execução das pilhas, gerenciamento de memória, 
+threads e etc., ou seja, é um “computador virtual”. Uma de suas funções que podemos notar aqui é o Garbage Collector. 
+Ele é uma thread responsável pela “limpeza” da memória virtual, ou seja, quando existe muito “lixo” na memória virtual, 
+o Garbage Collector entra em ação. Porém, é difícil prever quando isso irá acontecer, por ele ser uma thread, como 
+comentado anteriormente, e as threads são lançadas de acordo com o escalonador de processos.
+   A JVM não entende código Java, e sim um código especifico chamado ByteCode, que é gerado pelo compilador Java (javac). 
+ Esse código é o que será traduzido pela Virtual Machine para o código de cada máquina em questão. Os processos de 
+execução de um software Java foram aperfeiçoados ao longo dos tempos, pois no início, a Virtual Machine interpretava
+apenas um ByteCode por vez. Hoje em dia, a JVM possui sistemas de compilação JIT (Just - In - Time) misturados com a 
+interpretação do código. Essa técnica cria os chamados “Hot-Spots”, que nada mais são que áreas de código executadas 
+com maior frequência. Isso ocorre com a análise dos ByteCodes à medida que eles são interpretados pela Virtual Machine.
             
-3. Quais as principais características do Java 5? O que mudou nos programas já
-      existentes até o momento do seu lançamento?
+2. Quais as principais características do Java 5? O que mudou nos programas já existentes até o momento do seu lançamento?
+   As principais características estão relacionadas à sintaxe da linguagem, com as seguintes melhorias: 
+   - for enhanced(loop for aprimorado), 
+      for(declaration : expression) {
+     // Statements
+     }
+   - generics :trouxe funcionalidades interessantes para o reuso de código. Agora, podemos criar uma classe só e, a 
+   partir dessa classe, instanciar objetos de diferentes tipos, de acordo com a nossa escolha
+   
+   - autoboxing.
+     Com a introdução do autoboxing e unboxing em Java, essa conversão primitiva para objeto acontece automaticamente 
+     pelo compilador Java, o que torna o código mais legível.
+
+
 4. O que é JCP? Como você pode fazer para submeter uma mudança que você considera importante para futuras versões de Java?
+   JCP é a Java Community Process. Para submeter uma mudança, uma pessoa deve propor uma JSR (Java Specification Release) e enviar à JCP.
+
 5. Quais plataformas compõem a tecnologia Java? Forneça uma pequena descrição de cada uma delas.
+  - Java SE para o desenvolvimento de sistemas desktop e distribuídos; 
+  - Java EE para aplicações corporativas Web e de componentes de negócio; 
+  - Java ME para o desenvolvimento de aplicações para dispositivos móveis.
+  - Java Card. Voltada para dispositivos embarcados com limitações de processamento e armazenamento, como smart cards e o Java Ring.
+  - JavaFX. Plataforma para desenvolvimento de aplicações multimídia em desktop/web (JavaFX Script) e dispositivos móveis (JavaFX Mobile).
+
 6. Explique o que é bytecode e como ele deve ser “lido” para permitir que um programa Java seja executado.
+   Bytecode é o código gerado pelo compilador Java. Ele é interpretado por meio
+   das instruções presentes na máquina virtual Java.
+
 7. Explique, com as suas palavras, o processo de compilação, interpretação e execução de programas Java. Dica: faça uma ilustração.
+   Após escrito o código .java, ele é compilado por meio do compilador Java gerando o bytecode .class . O bytecode é 
+   então carregado e interpretado pela JVM que executa suas instruções.
+   ![esquemaFuncionamentoJvm](img.png)
+
 8. Por que o classpath é tão importante para o Java?
+   O classpath indica o local exato onde estão disponíveis todas as classes necessárias para que um programa seja 
+   compilado e executado.
