@@ -30,6 +30,17 @@
   código da máquina virtual em que estes programas rodam não é. Cada
   plataforma operacional possui a sua própria JVM
 
+- Compilador: programa responsável por traduzir código de uma linguagem alto nível para 
+uma linguagem baixo nível;
+    - Tradutor : programa que traduz um programa fonte escrito em uma linguagem qualquer
+      (denominada linguagem fonte) para um programa objeto equivalente escrito em outra linguagem(denominada linguagem objeto.)
+    - compilador: é um tradutor em  que a linguagem fonte é uma linguagem de alto nível e a linguagem objeto é uma
+      linguagem baixo nivel(assembly ou máquina). Ex: C++ (ele precisa criar um código máquina para cada SO)
+    - iNTERPRETADOR: É UM PROGRAMA QUE INTERPRETA DIRETAMENTE AS INSTruções do programa fonte, gerando o resultado.
+      Ex: python, php...
+    - Tradutor/Interpretador: esquema híbrido para implementação de linguagens de programação. Ex: java (tem uma etapa de
+      tradução e outra de interpretação)
+
 - O CLASSPATH: O Path (caminho em inglês) é uma variável de ambiente de um sistema operacional 
   que fornece a uma aplicação uma lista de pastas onde procurar por algum
   recurso específico
