@@ -108,3 +108,93 @@ com maior frequência. Isso ocorre com a análise dos ByteCodes à medida que el
 8. Por que o classpath é tão importante para o Java?
    O classpath indica o local exato onde estão disponíveis todas as classes necessárias para que um programa seja 
    compilado e executado.
+
+## Capitulo 2 - ESTRUTURAS BÁSICAS DA LINGUAGEM JAVA
+
+- O QUE SÃO TIPOS PRIMITIVOS?  Um primitivo (valor primitivo, tipo de dados primitivo) é um dado que não é representado 
+   através de um Objeto e, por consequência, não possui métodos. Os tipos primitivos são boolean, byte, char, short, 
+   int, long, float e double. 
+- DECLARAÇÃO DE VARIÁVEIS: Java é uma linguagem de programação fortemente tipada. Isto significa que
+  cada variável deve ter um tipo de dado associado a ela.
+- ESCOPO DE VARIÁVEL: O conceito escopo de variável descreve a vida de uma variável, ou seja, refere-se à
+  acessibilidade de uma variável. É a parte do programa em que o nome da variável pode ser referenciado. 
+    - VARIÁVEIS DE INSTÂNCIA (ATRIBUTOS): As variáveis de instâncias são definidas dentro da classe, mas fora de qualquer
+      método, e só são inicializadas quando a classe é instanciada. Elas são os campos que pertencem a cada objeto.
+      
+        ![img_1.png](img_1.png)
+  
+    - Variáveis Locais: As variáveis locais são as declaradas dentro de um método. Da mesma forma
+      que a variável local inicia sua existência dentro do método, ela também é eliminada quando a execução do método é concluída. Não há palavra-chave especial
+      que designa uma variável como local; a determinação vem inteiramente a partir do local em que a variável é declarada - que é entre as chaves de abertura e
+      fechamento do método.As variáveis locais só são visíveis para os métodos em que são declaradas,
+      não são acessíveis a partir do resto da classe. Por isso elas não utilizam a maioria dos modificadores e acessos como public, abstract, static etc., porém ela pode
+      fazer uso do modificador final.A variável local precisa ser inicializada para ser usada. 
+      A sintaxe para declarar uma variável local e inicializá-la é semelhante ao declarar um campo.
+      ![img_2.png](img_2.png)
+  
+    - Variáveis de Classe (Estáticas)Variáveis de classe, também conhecidas como variáveis estáticas, são declaradas
+      com a palavra-chave static em uma classe, mas fora de um método construtor
+      ou um bloco. O modificador static diz ao compilador que há apenas uma cópia
+      de cada variável de classe por classe, independentemente de quantos objetos são
+      criados a partir dele. na declaração de uma variável dentro de uma classe, para se criar uma variável 
+      que será compartilhada por todas as instâncias de objetos de uma classe como um variável comum.
+      Variáveis e métodos marcados como static pertencem à classe, ao invés de alguma instância particular.
+        ![img_3.png](img_3.png)
+  
+  ## COMPARANDO OS ESCOPOS DE VARIÁVEL
+
+![img_4.png](img_4.png)
+
+## modificadores de acesso
+ ![img_5.png](img_5.png)
+ 
+## ESTRUTURAS DE CONTROLE
+
+Quando você compila e executa um programa Java, a JVM executa o que está
+dentro do método principal. Estas instruções são realizadas sequencialmente.
+Um programa de computador (algoritmo) é como uma receita: uma sequência
+de instruções
+
+Estruturas de controle são instruções que permitem que blocos específicos
+de código sejam escolhidos para serem executados, redirecionando determinadas 
+partes do fluxo do programa. O Java contém três tipos de estruturas de
+controle: 
+- instruções de sequência:Normalmente instruções em um programa são executadas uma após a outra na
+  ordem em que são escritas. Somente programas muito simples são estritamente
+  sequenciais.
+![img_6.png](img_6.png)
+
+
+- instrução de seleção (if, if else, switch)
+  Diretivas são as instruções que a linguagem Java fornece para a construção de
+  programas. Elas são separadas por ; (ponto e vírgula).
+  Vejamos um exemplo de um código utilizando a instrução if.
+![img_7.png](img_7.png)
+  Uma estrutura muito utilizada em programação é o switch. A instrução switch
+  verifica uma variável e trabalha de acordo com seus cases. Os cases são as possibilidades
+  de resultados que são obtidos por switch.Basicamente, o switch serve para controlar várias ações diferentes de acordo
+  com o case definido dentro dele
+
+
+- instruções de repetição (while, do-while, for).
+  Os loops da linguagem Java permitem que você repita a execução de um bloco
+  de código até que uma determinada condição seja verdadeira ou durante uma
+  quantidade específica de iterações.
+  O loop for será particularmente útil para o controle do fluxo quando você já souber quantas vezes terá de executar as 
+  instruções do bloco do loop. A figura abaixo apresenta a estrutura do comando for.
+  O loop while será adequado em cenários nos quais você não souber quantas
+  vezes o bloco ou instrução terá que ser repetido.
+  O do while difere do while no sentido de permitir que pelo menos uma execução do bloco de comandos seja executada 
+  antes de testar a condição. O bloco de comandos será executado enquanto a condição for verdadeira.
+
+## DESVIOS INCONDICIONAIS
+
+O Java só tem dois casos específicos de desvios incondicionais: break e continue.
+Break e continue são dois comandos de controle de estruturas largamente utilizados em loops (repetições), como for e while.
+
+Break - O comando break tem a função de interromper a execução de um loop. No
+comando switch, por exemplo, ele determina que não pode ser executado o case
+seguinte, e assim por diante.
+
+Continue  - O comando continue tem a função de fazer com que a condição do comando de
+loop seja novamente testada, mesmo antes de alcançar o fim do comando. 
