@@ -209,3 +209,25 @@ seguinte, e assim por diante.
 
 Continue  - O comando continue tem a função de fazer com que a condição do comando de
 loop seja novamente testada, mesmo antes de alcançar o fim do comando. 
+
+
+## CLASSES X OBJETOS JAVA
+
+- ATRIBUTOS: definem as características que um objeto terá quando criado ;
+- MÉTODOS: indicam as funcionalidades que o objeto terá; Os métodos nada mais são do que pedaços de código que recebem 
+um determinado nome, e que podem ser chamados quando criamos um objeto.
+
+- PACOTES: são agrupamentos de classes, que nos auxiliam a separá-las de acordo com uma determinada característica 
+das classes. Esta organização se faz necessária, pois por meio dela fica mais fácil para que outras pessoas que olhem
+o seu código entendam o seu programa , além de auxiliar no trabalho em equipe e manutenção do seu software.
+
+- CONCEITOS BÁSICOS DE CLASSE:  Uma classe é o agrupamento de objetos com a mesma estrutura de dados (definida
+  pelos atributos ou propriedades) e comportamento (operações), ou seja, classe são as descrições dos objetos!
+
+- CONSTRUTORES: este artifício que podemos criar dentro de uma classe nos auxilia na hora de definir valores 
+padrões para os atributos que serão criados ao se montar um objeto. Os contrutores são métodos, ou seja  que poderão conter
+códigos de programação dos mais diversos. A principal diferença entre um construtor e um método qualquer , é que o
+construtor não pode conter nenhum tipo de retorno, deverá ter exatamente o mesmo nome da classe e ele será sempre chamado 
+primeiro quando um objeto for construído.
+
+- MÉTODOS: 
