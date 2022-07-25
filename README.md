@@ -230,4 +230,14 @@ códigos de programação dos mais diversos. A principal diferença entre um con
 construtor não pode conter nenhum tipo de retorno, deverá ter exatamente o mesmo nome da classe e ele será sempre chamado 
 primeiro quando um objeto for construído.
 
-- MÉTODOS: 
+- MÉTODOS: os metodos irão indicar quais funcionalidade que este objeto terá.
+  é equivalente a uma função, subrotina ou procedimento em outras linguagens de programação. Não existe em Java o conceito 
+de métodos globais. Todos os métodos devem sempre ser definidos dentro de uma classe.
+
+-METODO MAIN: este método é bem especial, pois serve de ponto de partida para que o sistema possa rodar. Todo programa
+em java começa com um método mainque chama outros métodos e cria objetos de outras classes previamente criadas.
+public static void main(String args[]{})
+
+- O QUE É UM PARADIGMA DE PROGRAMAÇÃO: nada mais é que uma forma de estruturar o seu pensamento para resolução de problemas.
+
+- 
